@@ -6,6 +6,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #191919;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Signature December";
