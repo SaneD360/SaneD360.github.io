@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #191919;
+}
+@font-face {
+  font-family: "Signature December";
+  src: url("SignatureDecemberRegular.eot");
+  src: url("SignatureDecemberRegular.eot?#iefix") format("embedded-opentype"),
+    url("SignatureDecemberRegular.woff2") format("woff2"),
+    url("SignatureDecemberRegular.woff") format("woff"),
+    url("SignatureDecemberRegular.ttf") format("truetype"),
+    url("SignatureDecemberRegular.svg#SignatureDecemberRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+h4 {
+  font-family: "Signature December";
+  color: white;
+  font-size: 20px;
+}
+h3 {
+  font-family: "Signature December";
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+/*Header*/
+.logo {
+  background: url(Img/Logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 150px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  background: #191919;
+  text-align: center;
+}
+nav {
+  margin-right: 20px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: 0, 5s;
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 5px;
+}
+nav a.avtive,
+nav a:hover {
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.header .container {
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(Img/header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slogan {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+.slogan a {
+  padding: 5px 15px;
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+
+
+/*About*/
+.about .container {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about {
+  padding-top: 70px;
+  font-weight: 100px;
+  padding-bottom: 70px;
+}
+.about h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.about p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.gauche {
+  width: 60%;
+  background-image: url(Img/about.jpg);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.droite {
+  width: 40%;
+  text-align: center;
+}
+
+/*Menu*/
+
+.menu {
+  background-image: url(Img/header.jpg);
+  background-position: top;
+  background-size: cover;
+  padding: 100px 0px;
+}
+.menu h2 {
+  font-family: "Signature December";
+  font-size: 20px;
+  text-align: left;
+  padding-left: 50px;
+  color: white;
+}
+.plat-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.card {
+  width: calc(100% / 3);
+}
+
+.plat .card {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+.plat .card-01 {
+  background-image: url(Img/plat01.jpg);
+}
+.plat .card-02 {
+  background-image: url(Img/plat02.jpg);
+}
+.plat .card-03 {
+  background-image: url(Img/plat03.jpg);
+}
+.plat .card-04 {
+  background-image: url(Img/plat04.jpg);
+}
+.plat .card-05 {
+  background-image: url(Img/plat05.jpg);
+}
+.plat .card-06 {
+  background-image: url(Img/plat06.jpg);
+}
+
+/*Infos-Horaire*/
+
+.info-container {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.info-flex {
+  display: flex;
+  align-items: top;
+  height: 450px;
+}
+.infos {
+  padding: 60px;
+  font-weight: 100px;
+}
+.i-gauche {
+  width: 50%;
+  text-align: center;
+  border: 2px solid white;
+  padding: 5px 30px;
+}
+.i-droite {
+  width: 50%;
+  text-align: center;
+}
+hr {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Accès/Coontact*/
+
+.accès-container {
+  max-width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.accès-flex {
+  display: flex;
+  align-items: top;
+}
+
+.accès {
+  padding: 60px;
+  font-weight: 100px;
+}
+
+.a-gauche {
+  width: 50%;
+  text-align: center;
+  border: 2px solid white;
+  padding: 0px 20px;
+}
+.a-droite {
+  width: 50%;
+  text-align: center;
+  border: 2px solid white;
+  padding: 0px 20px;
+}
+
+/*Footer*/
+
+.cta {
+  padding: 100px 0px;
+  text-align: center;
+}
+.cta .verre {
+  position: absolute;
+  bottom: -2500px;
+  right: 100px;
+}
+.cta .pain {
+  position: absolute;
+  bottom: -2500px;
+  right: 1100px;
+}
+.cta a {
+  padding: 5px 15px;
+  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  
+  .logo {
+    padding: 20px 100px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .cta .verre {
+    bottom: -2900px;
+  right: 0px;
+  }
+  .cta .pain {
+    bottom: -2900px;
+  right: 700px;
+  }
+  .about .left,
+  .about .right {
+    width: 100%;
+  }
+  .card {
+    width: calc(100% / 2 - 10px);
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    padding: 20px 100px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+
+  .info-container {
+    width: 90%;
+  }
+  .i-gauche p{
+    font-size: 12px;
+  }
+  .i-gauche {
+    width: 60%;
+  }
+  
+  .info-flex{
+    gap: 40px;
+  }
+  .cta .verre {
+    bottom: -2950px;
+  right: 5px;
+  }
+  .cta .pain {
+    bottom: -2900px;
+  right: 450px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info-flex {
+  height: 500px;
+  }
+  .about .left,
+  .about .right {
+    width: 100%;
+  }
+  hr {
+    width: 768px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .slogan {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+  }
+  h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .logo {
+    padding: 20px 100px;
+  }
+  nav a {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .info-container {
+    width: 90%;
+  }
+  .i-gauche p{
+    font-size: 12px;
+  }
+  .i-gauche {
+    width: 60%;
+  }
+  
+  .info-flex{
+    gap: 40px;
+  }
+  .cta .verre {
+    bottom: -2900px;
+  right: 5px;
+  }
+  .cta .pain {
+    bottom: -2950px;
+  right: 300px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info-flex {
+  height: 500px;
+  }
+  .about .left,
+  .about .right {
+    width: 100%;
+  }
+  hr {
+    width: 576px;
+  }
+}
